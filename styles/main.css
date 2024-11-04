@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #45a049;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu button {
+    flex-grow: 1;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.header-menu button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.main .block-container {
+    padding-top: 0rem;
+}
+
+@media (max-width: 768px) {
+    .header-menu button {
+        font-size: 12px;
+        height: 35px;
+    }
+}
+
+header {
+    visibility: visible;
+}
+
+.block-container {
+    max-width: 80% !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    margin: 0 auto !important;
+}
+
+.stChatMessage {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+.stChatInputContainer {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+header {
+    visibility: visible !important;
+}
+
+.main .block-container {
+    padding-top: 2rem !important;
+}
+
+.stButton > button {
+    padding: 0 10px !important;
+    font-size: 0.9em !important;
+}
+
+.header-menu button.active {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid white;
+} 
